@@ -1,0 +1,112 @@
+// Base – Default HTML tag styling
+// Do not put CSS classes or IDs in here
+
+header {
+  overflow: hidden;
+  @media #{$medium-up} {
+    padding: $scale1;
+  }
+}
+
+// Headings
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+  //font-family: $heading-text;
+  font-weight: $normal;
+  line-height: 1.1;
+  margin: $scale1 0 $scale-base/4;
+  padding: 0;
+
+  a {
+    font-weight: $normal;
+  }
+}
+
+h1 {
+  font-size: $scale3;
+  @media #{$large-up} {
+    font-size: $scale4;
+  }
+
+  &.smaller {
+    font-size: $scale3*.95;
+  }
+}
+
+h2 {
+  font-size: $scale2;
+  @media #{$large-up} {
+    font-size: $scale3;
+  }
+
+  &.smaller {
+    font-size: $scale2*.95;
+  }
+}
+
+h3 {
+  font-size: $scale1;
+  @media #{$large-up} {
+    font-size: $scale2;
+  }
+
+  &.smaller {
+    font-size: $scale1*.95;
+  }
+}
+
+h4 {
+  font-size: $scale-base;
+  @media #{$large-up} {
+    font-size: $scale1;
+  }
+}
+
+// Lists
+
+li {
+  line-height: 1.4375; // 23px/16px
+  margin-bottom: $scale2;
+}
+
+ul {
+  li {
+    list-style: disc;
+    margin-bottom: 0;
+
+    ul {
+      li {
+        list-style: square;
+      }
+    }
+  }
+}
+
+ol {
+  li {
+    list-style: decimal;
+    margin-bottom: 0;
+
+    ol {
+      li {
+        list-style: lower-alpha;
+      }
+    }
+  }
+}
+
+dl {
+  dt {
+    margin-bottom: 0;
+  }
+
+  dd {
+    margin-bottom: $scale-base;
+  }
+}

@@ -1,0 +1,20 @@
+// Design
+// Override basic styling here. This includes Foundation, base & layout css, ede, etc.
+
+.billboard {
+  background-image: url('../images/test.jpg');
+  background-position: center 0;
+  background-size: cover;
+  margin-bottom: $scale6;
+
+  h1,
+  a {
+    color: #fff;
+  }
+}
+
+.main-content {
+  .row {
+    margin-bottom: $scale6;
+  }
+}

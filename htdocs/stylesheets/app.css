@@ -9057,3 +9057,161 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
+/* line 6, ../../scss/partials/_reuse.scss */
+.hidden {
+  display: block;
+  visibility: hidden;
+}
+
+/* line 11, ../../scss/partials/_reuse.scss */
+.block {
+  display: block;
+}
+
+/* line 17, ../../scss/partials/_reuse.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 4, ../../scss/partials/_base.scss */
+header {
+  overflow: hidden;
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 4, ../../scss/partials/_base.scss */
+  header {
+    padding: 1.309rem;
+  }
+}
+
+/* line 13, ../../scss/partials/_base.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #222;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 1.309rem 0 0.25rem;
+  padding: 0;
+}
+/* line 26, ../../scss/partials/_base.scss */
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: 400;
+}
+
+/* line 31, ../../scss/partials/_base.scss */
+h1 {
+  font-size: 2.118rem;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 31, ../../scss/partials/_base.scss */
+  h1 {
+    font-size: 2.618rem;
+  }
+}
+/* line 37, ../../scss/partials/_base.scss */
+h1.smaller {
+  font-size: 2.0121rem;
+}
+
+/* line 42, ../../scss/partials/_base.scss */
+h2 {
+  font-size: 1.618rem;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 42, ../../scss/partials/_base.scss */
+  h2 {
+    font-size: 2.118rem;
+  }
+}
+/* line 48, ../../scss/partials/_base.scss */
+h2.smaller {
+  font-size: 1.5371rem;
+}
+
+/* line 53, ../../scss/partials/_base.scss */
+h3 {
+  font-size: 1.309rem;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 53, ../../scss/partials/_base.scss */
+  h3 {
+    font-size: 1.618rem;
+  }
+}
+/* line 59, ../../scss/partials/_base.scss */
+h3.smaller {
+  font-size: 1.24355rem;
+}
+
+/* line 64, ../../scss/partials/_base.scss */
+h4 {
+  font-size: 1rem;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 64, ../../scss/partials/_base.scss */
+  h4 {
+    font-size: 1.309rem;
+  }
+}
+
+/* line 73, ../../scss/partials/_base.scss */
+li {
+  line-height: 1.4375;
+  margin-bottom: 1.618rem;
+}
+
+/* line 79, ../../scss/partials/_base.scss */
+ul li {
+  list-style: disc;
+  margin-bottom: 0;
+}
+/* line 84, ../../scss/partials/_base.scss */
+ul li ul li {
+  list-style: square;
+}
+
+/* line 92, ../../scss/partials/_base.scss */
+ol li {
+  list-style: decimal;
+  margin-bottom: 0;
+}
+/* line 97, ../../scss/partials/_base.scss */
+ol li ol li {
+  list-style: lower-alpha;
+}
+
+/* line 105, ../../scss/partials/_base.scss */
+dl dt {
+  margin-bottom: 0;
+}
+/* line 109, ../../scss/partials/_base.scss */
+dl dd {
+  margin-bottom: 1rem;
+}
+
+/* line 4, ../../scss/partials/_design.scss */
+.billboard {
+  background-image: url("../images/test.jpg");
+  background-position: center 0;
+  background-size: cover;
+  margin-bottom: 4.236rem;
+}
+/* line 10, ../../scss/partials/_design.scss */
+.billboard h1,
+.billboard a {
+  color: #fff;
+}
+
+/* line 17, ../../scss/partials/_design.scss */
+.main-content .row {
+  margin-bottom: 4.236rem;
+}
