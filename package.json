@@ -1,0 +1,17 @@
+{
+  "name": "astonish",
+  "version": "0.0.0",
+  "description": "Build scripts for Astonish",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-compass": "~0.9.0",
+    "load-grunt-config": "~0.7.0",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-uglify": "^0.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "readmeFilename": "README.md"
+}
