@@ -11,7 +11,10 @@ module.exports = function(grunt) {
       },
       scripts: {
         files: ['js/**/*.js'],
-        tasks: ['uglify:dev']
+        tasks: ['uglify:dev'],
+        options: {
+          livereload: true,
+        }
       }
     },
 
@@ -53,7 +56,6 @@ module.exports = function(grunt) {
           'htdocs/js/app.min.js':
           [
             'bower_components/jquery/dist/jquery.js',
-            'bower_components/foundation/js/foundation.js',
             'js/**/*.js'
           ]
         }
@@ -63,14 +65,6 @@ module.exports = function(grunt) {
           'htdocs/js/app.min.js':
           [
             'bower_components/jquery/dist/jquery.js',
-            'bower_components/foundation/js/foundation/foundation.js',
-            'bower_components/foundation/js/foundation/foundation.abide.js',
-            'bower_components/foundation/js/foundation/foundation.alert.js',
-            'bower_components/foundation/js/foundation/foundation.equalizer.js',
-            'bower_components/foundation/js/foundation/foundation.orbit.js',
-            'bower_components/foundation/js/foundation/foundation.reveal.js',
-            'bower_components/foundation/js/foundation/foundation.tab.js',
-            'bower_components/foundation/js/foundation/foundation.topbar.js',
             'js/**/*.js'
           ]
         }

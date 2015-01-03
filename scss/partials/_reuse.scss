@@ -1,5 +1,31 @@
 // Reusables – Mixins, common classes & components
 
+button,
+.button {
+  @include border-radius(3px);
+  @include box-shadow(0 3px 0 darken($dk-blue, 20%));
+  @include transition(all .1s linear);
+  background-color: $dk-blue;
+  color: #fff;
+  font-size: $scale1;
+  font-weight: $bold;
+  text-decoration: none;
+
+  &:hover {
+    @include box-shadow(0 3px 0 $dk-blue);
+    background-color: lighten($dk-blue, 10%);
+    text-decoration: none;
+  }
+
+  &:active,
+  &:focus {
+    @include box-shadow(inset 0 3px 0  $dk-blue);
+    background-color: lighten($dk-blue, 10%);
+  }
+}
+
+// Color
+
 
 // Display
 
@@ -16,4 +42,279 @@
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-tiny {
+  font-size: $scale-2; // 8px
+}
+
+.text-small {
+  font-size: $scale-1; // 12.944px
+}
+
+// Spacing
+
+.nomar {
+  margin: 0;
+}
+
+.nopad {
+  padding: 0;
+}
+
+.nopad-right {
+  padding-right: 0;
+}
+
+.nopad-left {
+  padding-left: 0;
+}
+
+.nopad-sides {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.marall-0 {
+  margin: 0;
+}
+
+.marall-1 {
+  margin: $scale-base;
+}
+
+.marall-2 {
+  margin: $scale2;
+}
+
+.marall-3 {
+  margin: $scale3;
+}
+
+.marall-4 {
+  margin: $scale4;
+}
+
+.marall-5 {
+  margin: $scale5;
+}
+
+.marbot-0 {
+  margin-bottom: 0;
+}
+
+.marbot-1 {
+  margin-bottom: $scale-base;
+}
+
+.marbot-2 {
+  margin-bottom: $scale2;
+}
+
+.marbot-3 {
+  margin-bottom: $scale3;
+}
+
+.marbot-4 {
+  margin-bottom: $scale4;
+}
+
+.marbot-5 {
+  margin-bottom: $scale5;
+}
+
+.martop-0 {
+  margin-top: 0;
+}
+
+.martop-1 {
+  margin-top: $scale-base;
+}
+
+.martop-2 {
+  margin-top: $scale2;
+}
+
+.martop-3 {
+  margin-top: $scale3;
+}
+
+.martop-4 {
+  margin-top: $scale4;
+}
+
+.martop-5 {
+  margin-top: $scale5;
+}
+
+.marleft-0 {
+  margin-left: 0;
+}
+
+.marleft-1 {
+  margin-left: $scale-base;
+}
+
+.marleft-2 {
+  margin-left: $scale2;
+}
+
+.marleft-3 {
+  margin-left: $scale3;
+}
+
+.marleft-4 {
+  margin-left: $scale4;
+}
+
+.marleft-5 {
+  margin-left: $scale5;
+}
+
+.marright-0 {
+  margin-right: 0;
+}
+
+.marright-1 {
+  margin-right: $scale-base;
+}
+
+.marright-2 {
+  margin-right: $scale2;
+}
+
+.marright-3 {
+  margin-right: $scale3;
+}
+
+.marright-4 {
+  margin-right: $scale4;
+}
+
+.marright-5 {
+  margin-right: $scale5;
+}
+
+.padall-0 {
+  padding: 0;
+}
+
+.padall-1 {
+  padding: $scale-base;
+}
+
+.padall-2 {
+  padding: $scale2;
+}
+
+.padall-3 {
+  padding: $scale3;
+}
+
+.padall-4 {
+  padding: $scale4;
+}
+
+.padall-5 {
+  padding: $scale5;
+}
+
+.padbot-0 {
+  padding-bottom: 0;
+}
+
+.padbot-1 {
+  padding-bottom: $scale-base;
+}
+
+.padbot-2 {
+  padding-bottom: $scale2;
+}
+
+.padbot-3 {
+  padding-bottom: $scale3;
+}
+
+.padbot-4 {
+  padding-bottom: $scale4;
+}
+
+.padbot-5 {
+  padding-bottom: $scale5;
+}
+
+.padtop-0 {
+  padding-top: 0;
+}
+
+.padtop-1 {
+  padding-top: $scale-base;
+}
+
+.padtop-2 {
+  padding-top: $scale2;
+}
+
+.padtop-3 {
+  padding-top: $scale3;
+}
+
+.padtop-4 {
+  padding-top: $scale4;
+}
+
+.padtop-5 {
+  padding-top: $scale5;
+}
+
+.padleft-0 {
+  padding-left: 0;
+}
+
+.padleft-1 {
+  padding-left: $scale-base;
+}
+
+.padleft-2 {
+  padding-left: $scale2;
+}
+
+.padleft-3 {
+  padding-left: $scale3;
+}
+
+.padleft-4 {
+  padding-left: $scale4;
+}
+
+.padleft-5 {
+  padding-left: $scale5;
+}
+
+.padright-0 {
+  padding-right: 0;
+}
+
+.padright-1 {
+  padding-right: $scale-base;
+}
+
+.padright-2 {
+  padding-right: $scale2;
+}
+
+.padright-3 {
+  padding-right: $scale3;
+}
+
+.padright-4 {
+  padding-right: $scale4;
+}
+
+.padright-5 {
+  padding-right: $scale5;
 }

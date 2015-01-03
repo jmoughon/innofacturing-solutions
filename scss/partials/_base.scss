@@ -3,9 +3,6 @@
 
 header {
   overflow: hidden;
-  @media #{$medium-up} {
-    padding: $scale1;
-  }
 }
 
 // Headings
@@ -29,9 +26,13 @@ h6 {
 }
 
 h1 {
-  font-size: $scale3;
-  @media #{$large-up} {
-    font-size: $scale4;
+  @include text-shadow(#000 2px 2px 5px);
+  color: #fff;
+  font-size: $scale4;
+  margin: $scale5 0;
+
+  @media #{$medium-up} {
+    font-size: $scale5;
   }
 
   &.smaller {
@@ -41,6 +42,8 @@ h1 {
 
 h2 {
   font-size: $scale2;
+  margin: 0 0 $scale3 0;
+
   @media #{$large-up} {
     font-size: $scale3;
   }
@@ -52,6 +55,7 @@ h2 {
 
 h3 {
   font-size: $scale1;
+
   @media #{$large-up} {
     font-size: $scale2;
   }
@@ -63,16 +67,30 @@ h3 {
 
 h4 {
   font-size: $scale-base;
+
   @media #{$large-up} {
     font-size: $scale1;
   }
 }
 
+// Paragraphs
+
+a {
+  color: $dk-blue;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: lighten($dk-blue, 20%);
+  }
+}
+
+
 // Lists
 
 li {
   line-height: 1.4375; // 23px/16px
-  margin-bottom: $scale2;
+  margin-bottom: $scale-2;
 }
 
 ul {

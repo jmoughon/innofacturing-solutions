@@ -1,5 +1,11 @@
 // Variables
 
+// COLORS
+// ------
+$red: #c20404;
+$lt-blue: #c1c2c7;
+$dk-blue: #252d3d;
+
 // FONT WEIGHTS
 // ------------
 
@@ -11,6 +17,8 @@ $bold: 700;
 // -----
 
 // Based on golden ratio
+$scale-2: .618rem; // 8px
+$scale-1: .809rem; // 12.944px
 $scale-base: 1rem; // 16px
 $scale1: 1.309rem; // 20.943px
 $scale2: 1.618rem; // 25.888px

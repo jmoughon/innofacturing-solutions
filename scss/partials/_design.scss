@@ -2,19 +2,61 @@
 // Override basic styling here. This includes Foundation, base & layout css, ede, etc.
 
 .billboard {
-  background-image: url('../images/test.jpg');
-  background-position: center 0;
-  background-size: cover;
-  margin-bottom: $scale6;
 
-  h1,
   a {
     color: #fff;
   }
+
+  .billboard-image {
+    @include filter(grayscale(100%) blur(2px));
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
+    filter: gray; /* IE6-9 */
+    background-image: url('../images/tesla-manufacturing.jpg');
+    background-position: center 0;
+    background-size: cover;
+    height: 600px;
+    position: absolute;
+    width: 100%;
+
+    @media only screen and (min-width: 400px) {
+      height: 625px;
+    }
+
+    @media only screen and (min-width: 550px) {
+      height: 660px;
+    }
+
+    @media #{$medium-up} {
+      height: 700px;
+      padding-top: 0;
+    }
+  }
+}
+
+.no-cssfilters .billboard .billboard-image {
+  background-image: url('../images/tesla-manufacturing-alt.jpg');
 }
 
 .main-content {
-  .row {
-    margin-bottom: $scale6;
+  overflow: hidden;
+}
+
+footer {
+  background-color: $dk-blue;
+  color: #fff;
+  padding: $scale1 0;
+
+  h3 {
+    color: #fff;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: darken(#fff, 40%);
+    }
   }
 }
