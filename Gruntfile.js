@@ -34,10 +34,10 @@ module.exports = function(grunt) {
       options: {
         importPath: "bower_components/foundation/scss",
         sassDir: "scss",
-        cssDir: "htdocs/stylesheets",
-        imagesDir: "htdocs/images",
-        javascriptsDir: "htdocs/js",
-        fontsDir: "htdocs/fonts",
+        cssDir: "docs/stylesheets",
+        imagesDir: "docs/images",
+        javascriptsDir: "docs/js",
+        fontsDir: "docs/fonts",
         relativeAssets: true,
         debugInfo: false,
         quiet: true,
@@ -53,7 +53,7 @@ module.exports = function(grunt) {
           beautify: true
         },
         files: {
-          'htdocs/js/app.min.js':
+          'docs/js/app.min.js':
           [
             'bower_components/jquery/dist/jquery.js',
             'js/**/*.js'
@@ -62,7 +62,7 @@ module.exports = function(grunt) {
       },
       dist: {
         files: {
-          'htdocs/js/app.min.js':
+          'docs/js/app.min.js':
           [
             'bower_components/jquery/dist/jquery.js',
             'js/**/*.js'
